@@ -1,0 +1,517 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+
+html {
+  background:#150941;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%; 
+    scroll-behavior: smooth;
+    width: 100%;
+   
+}
+body{
+  margin: 0;
+
+
+}
+/*LOGO*/
+.logo{
+  height: 60px;
+}
+.logo img{
+  margin-top: 20px;
+  margin-left: 10px;
+  height: 55px;
+  margin-bottom: 0;
+}
+/*LANDING DIV*/
+.home{
+
+  width: 100%;
+  height: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  background:url(../images/landing-photo1.png),url(../images/bgimage.png); 
+  background-position: right top,left bottom;
+  background-repeat: no-repeat,no-repeat;
+  background-size:contain, 250px 200px;
+
+  
+ 
+}
+  
+.formIndex{
+  height: auto;
+  width: 50%;
+  margin-top: 2%;
+  margin-left: 5%;
+  text-align: center;
+  
+}
+
+.formIndex h1{
+  margin-bottom: 15px;
+  font-size: 2em;
+  color: #fff;
+  font-family: 'Spartan', sans-serif;
+ 
+}
+.formIndex h3{
+  margin-bottom: 50px;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  width: 70%;
+  margin-left: 15%;
+  
+}
+a.SignInbtn,a.LearnMore{
+display: inline-block;
+text-decoration: none;
+cursor: pointer;
+}
+
+a.SignInbtn,a.LearnMore{
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(235, 191, 71, 0.10), 0 6px 20px 0 rgba(163, 144, 104, 0.20);
+ background-color: #8c52ff;
+ color: white;
+  width:20%;
+  transition: 1s;
+}
+a.SignInbtn{
+  margin-right: 5px;
+}
+
+a.SignInbtn:hover,a.LearnMore:hover{
+ 
+  background-color: #5e17eb;
+  
+}
+
+
+/*LEARN MORE And AboutUs*/
+.whatsTalked1,.whatsTalked2,.aboutUs {
+  width: 100%;
+  display: flex;  
+}
+.aboutUs{
+  min-height: 300px;
+  flex-wrap: wrap;
+}
+.aboutUs h1, .aboutUs p{
+  width: 80%;
+  margin-left: 10%;
+}
+
+.whatsTalked1,.whatsTalked2{
+  flex-wrap: wrap-reverse;
+  min-height: 600px;
+}
+
+.description, .img-whatsTalked{
+width: 50%;
+min-height: 500px;
+}
+.desc-AboutUs{
+ width: 100%;
+min-height: auto;
+text-align: center;
+}
+.description h1,.aboutUs h1{
+  font-family: 'Spartan', sans-serif;
+  font-size: 2em;
+  color: white; 
+  
+
+}
+.description p, .aboutUs p{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5em;
+  text-align: justify; 
+  color: white; 
+  letter-spacing: 2px;
+}
+
+
+.description p,.description h1{
+  margin: 10%;
+}
+
+.img-whatsTalked{
+  display: flex;
+  flex-wrap:wrap;
+  align-content: flex-start;
+  justify-content: center;
+}
+.img-whatsTalked img{
+  margin-top:  5%;
+}
+
+/*BG Image*/
+.bgImg{
+  width: 100%;
+  height: 200px;
+  background:url(../images/bgimage.png); 
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size:contain, 100% 100%;
+}
+
+/*FEATURES DESCRIPTION*/
+.features {
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  flex-wrap: wrap; 
+
+  
+}
+.features .des{
+  text-align: center;
+  width: 100%;  
+}
+.features .des h1{
+color: #fff;
+font-family: 'Spartan', sans-serif;
+margin-top: 5%;
+}
+.features hr, .aboutUs hr{
+  width: 80%;
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+
+}
+.features-box{
+  display: flex;
+  min-height: 400px;
+  justify-content: space-evenly;
+  flex-wrap: wrap; 
+ 
+}
+.box{
+  margin-top: 3%;
+  width: 20%;
+  height: 70%;
+  text-align: center;
+  flex-wrap: wrap; 
+  color: white;
+ 
+ 
+}
+.box h3{
+  font-family: 'Spartan', sans-serif;
+}
+
+.box p{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2em;
+}
+
+i.fas {
+  display: inline-block;
+  border-radius: 60px;
+  padding: 1.3em 1.3em;
+ font-size: 20px;
+ background-image:linear-gradient(to right, #5271ff, #ff914d);
+ color: #fff;
+}
+/*FOOTER*/
+.footer{
+  width: 100%;
+  min-height: 100px;
+  color: white;
+  padding: 0%;
+  margin: 0%;
+  
+}
+.one{
+  margin-left: 10%;
+}
+
+
+.footer .foo-box{
+width: 35%;
+height: 100px;
+float: left;
+}
+
+.footer .bigthanks{
+  color: white;
+  font-size: 1.2em;
+}
+.footer .socialMedia_account{
+ font-size: 2em;
+ color: white;
+ padding: 10px;
+ text-decoration: none;
+ outline: none;
+
+
+}
+.footer .bigthanks:hover{
+  color:#737373;
+}
+.footer hr{
+  width: 80%;
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+}
+.footer .foo-box .bigthanks,.footer .foo-box .bigthanksh3{
+  margin-left: 60%;
+}
+@media screen and (max-width: 1400px) {
+  html{
+    overflow-x: hidden;
+    
+  }
+ 
+  .formIndex{
+    width: 40%;  
+    min-height: 80vh;  
+  }
+
+}
+@media screen and (max-width: 1000px) {
+  html{
+    overflow-x: hidden;
+  }
+ 
+  .home{
+    background:url(../images/landing-photo1.png);
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size:540px 550px;
+ /*min-width: 800px;*/
+
+  }
+  /*  .aboutUs,.whatsTalked1,.whatsTalked2,.features,.footer{
+    min-width: 700px;
+  }*/
+
+  .formIndex{
+    width: 50%;
+    min-height: 80vh;  
+    margin-left:0;
+  }
+  .formIndex h1{
+    width: 80%;
+    margin-left:35px;
+  }
+  .formIndex h3{
+    width: 80%;
+    margin-left: 35px;
+
+  }
+  .formIndex .LearnMore{
+    margin-right: 40px;
+   
+  }
+  
+  .box{
+    width: 40%;
+  }
+  .footer{
+    height: 30%;
+    width: 50%;
+    padding: 50px;
+  }
+
+ 
+  .img-whatsTalked{
+    align-content: flex-start;
+    justify-content: center;
+    text-align: center;
+ 
+  }
+ 
+  
+  .box{
+    width: 45%;
+    height: 250px;
+    margin-top: 10px;
+  }
+  .footer{
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+  }
+  
+}
+
+
+@media screen and (max-width: 700px) {
+  html{
+    overflow-x: hidden;
+  }
+  .aboutUs,.home,.whatsTalked1,.whatsTalked2,.features,.footer{
+    min-width:600px;
+    align-content: center;
+    text-align: center;
+  }
+  .home{
+    background-image: none;
+    align-content: flex-start;
+    height: 500px;
+
+  }
+  .formIndex{
+    min-height: 70vh;  
+    width: 100%;
+    margin-left: 0;
+    margin-top: 10%;
+    justify-content: center;
+  }
+  .formIndex h1{
+    width: 90%;
+    margin-left: 40px;
+  }
+  .formIndex h3{
+    width: 90%;
+    margin-left: 30px;
+    text-align: justify;
+  }
+  
+
+.description, .img-whatsTalked{
+  display: block;
+  width: 100%;
+}
+.img-whatsTalked{
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+.description p{
+  letter-spacing: normal;
+}
+.box{
+  width: 45%;
+  height: 300px;
+  margin-top: 20px;
+
+}
+.footer{
+  width: 100%;
+  padding: 0%;
+  margin: 0%;
+  text-align: center;
+
+}
+.footer .foo-box{
+  width: 100%;
+  text-align: center;
+  margin-left: 0%;
+}
+.socialMedia_account{
+  margin-left: 50%;
+  text-align: center;
+}
+
+.footer .foo-box .bigthanks,.footer .foo-box .bigthanksh3,.foo-box h3, .socialMedia_account{ 
+  margin-left: 0%;
+  text-align: center;
+}
+
+}
+@media screen and (max-width: 600px) {
+
+  
+  .home{
+   
+    background-image: none;
+    align-content: flex-start;
+    height: 500px;
+   
+   
+
+  }
+  .formIndex{
+    min-height: 70vh;  
+    margin-right: 5%;
+    margin-top: 10%;
+    justify-content: center;
+    text-align: center;
+
+  }
+  .formIndex h1{
+    width: 90%;
+    margin-top: 20%;
+   margin-right: 35%;
+    
+
+  }
+  .formIndex h3{
+    width: 90%;
+    margin-left: 35px;
+    text-align: justify;
+  }
+  .SignInbtn{
+    margin-left: 10%;
+  }
+
+
+
+
+  .home,.aboutUs,.whatsTalked1,.whatsTalked2,.features,.features-box,.footer{
+  min-width: 400px;
+  align-content: center;
+  text-align: center;
+}
+.bgImg{
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+  
+.description, .img-whatsTalked{
+  display: block;
+}
+.img-whatsTalked{
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+.description p{
+  letter-spacing: normal;
+}
+
+ 
+.features-box{
+  margin-right: 5%;
+  justify-content: center;
+  
+}
+.features .des {
+  justify-content: center;
+}
+
+.box{
+ 
+  width: 500px;
+  height: 230px;
+  margin-top: 10px;
+  margin-left: 10px;
+
+}
+.box p{
+  width: 90%;
+  margin-left: 30px;
+}
+.footer .foo-box{
+  width: 100%;
+  margin-left: 0%;
+}
+
+.footer .foo-box .bigthanks,.footer .foo-box .bigthanksh3,.foo-box h3{
+  margin-left: 0%;
+  text-align: center;
+}
+
+}

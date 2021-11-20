@@ -1,0 +1,198 @@
+html {
+  background:#150941;
+  background-attachment:fixed;
+  background-image:url(../images/choices-photo2.png);
+  background-repeat:no-repeat;
+  background-position:bottom left;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; 
+}
+.logo{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+.logo img{
+  margin-top: 20px;
+  margin-left: 10px;
+
+}
+
+.logo a img{
+  height: 60px;
+}
+.logo{
+  text-decoration: none;
+  color: white;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+.logo{
+  color: #ff914d;
+}
+
+body{
+ line-height: 1;
+overflow-x: hidden;
+}
+
+.container{
+  height: auto;
+  width:100%;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  text-align: center;
+ 
+}
+.box{
+  width:30%;
+  min-height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  background: #ffffff;
+  justify-content: center;
+  align-content: flex-start;
+  text-align: center;
+   border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(223, 225, 228, 0.19);
+  padding: 0;
+  overflow-x: hidden;
+}
+.join-box{
+  width:30%;
+}
+.imgJoin{
+  width: 100%;
+  height: 50%;
+ background-image: url(../images/joinroom-photo1.png);
+  background-position:center top;
+  background-repeat: no-repeat;
+  background-size: 110% 105%; /*IUUPDATE*/
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.join-box .imgJoin, .join-box .formJoin{
+  float: right;
+}
+
+.imgHost{
+  width: 100%;
+  height: 50%;
+  background-image: url(../images/hostroom-photo.png);
+  background-position:center top;
+  background-repeat: no-repeat;
+  background-size: 110% 105%; /*IUUPDATE*/
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.space{
+  height: 10%;
+  width: 100%;
+}
+input{
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 1rem;
+  border: 1px solid #dfe1e4;
+  margin: 10px;
+}
+
+input[type="text"]{
+  width:80%;
+}
+
+input[type="button"]{
+  width:85%;
+  background: #ffbd59;
+  color: #fff;
+}
+h1,h2{
+  margin: 2px;
+}
+h1{
+  font-size: 2rem;
+  color:#5271ff;
+}
+
+h2{
+  font-size: 1rem;
+}
+
+input[type="button"]:hover{
+  background: #ff914d;
+  box-shadow: 0px 10px 15px rgba(250, 166, 37, 0.3);
+}
+hr{
+  width: 80%;
+  color:rgba(231, 231, 236, 0.19);
+  margin: auto;
+}
+@media screen and (max-width: 1200px) {
+  .container{
+    align-content: flex-start;
+    min-height: 70%;
+    width: 100%;
+  }
+  .box{
+    width: 40%;
+    min-height: 600px;
+  }
+
+  .imgJoin, .formJoin, .imgHost, .formHost{
+    min-height: 50%;
+  }
+
+  }
+@media screen and (max-width: 1000px) {
+  .box{
+    width: 45%;
+    min-height: 500px;
+  }
+ 
+  
+  h1,h2{
+    margin: 2px;
+  }
+  
+  
+  }
+@media screen and (max-width: 700px) {
+  .box{
+    width: 60%;
+    min-height: 500px;
+  }
+
+}
+ 
+  @media screen and (max-width: 600px) {
+    .box{
+      width: 70%;
+      min-height: 500px;
+    }
+    
+    }
+  @media screen and (max-width: 500px) {
+    .container{
+       align-content: center;
+    }
+    .box{
+      width: 90%;
+      margin-right: 15px;
+      min-height: 500px;
+    
+    }
+    .body{
+      background-size: 300px 200px;
+    }
+ 
+    
+    
+    
+    }
+

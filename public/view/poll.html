@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Talked Poll</title>
+ 
+  <link rel="icon" type="image/x-icon" sizes="32x32" href="../images/TalkedLogo0.ico"/>
+	<link rel="stylesheet" href="../css/poll.css">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="box">
+    <h2>Polls</h2>
+	 <input type="file" name="inputfile"
+      id="inputfile" class="upload-box">
+  <textarea hidden id="output"></textarea>
+</div>
+  
+  
+<div class="form" id="form">
+
+   <p class="title">Fill up the Form</p>
+	 <hr><br>
+	Enter Question: <input type="text" id="question"><br>
+	
+	Enter option 1:  &nbsp;<input type="text" id="opt1"><br>
+	
+	Enter option 2:  &nbsp;<input type="text" id="opt2"><br>
+	
+	Enter option 3:  &nbsp;<input type="text" id="opt3"> <br>
+	
+	<button id="btn" onclick="displayResult()">Enter</button>
+</div>
+
+<div>
+
+	
+	<div class="poll" id="poll">	
+	<a class="back" onclick="back()"><i class="fa fa-arrow-left"></i> </a>
+		<p id="question1"></p>
+		<hr>
+		<p id="show"></p>
+		<p id="rk"></p><div id="bar1"></div><br>
+		
+  
+		<p id="rk2"></p>  <div id="bar2"></div><br>
+
+		<p id="rk3"></p> 	<div id="bar3"></div><br>
+
+	</div>
+</div>
+
+
+<script src="../js/polling.js"></script>
+</body>
+</html>

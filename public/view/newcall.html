@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en" class="no-js">
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join A Meeting | Talked</title>
+  <link rel="icon" type="image/x-icon" sizes="32x32" href="../images/TalkedLogo0.ico"/>
+ <!--LOGO ICON-->
+  <link rel="stylesheet" href="../css/createroom.css" />
+</head>
+<body >
+  <div class="logo"> 
+    <a href="/home"><img src="../images/new-logo.png" href="#"></a>
+  </div>
+
+  <div class="container">
+      
+    <div class="box join-box"><br>
+      <div class="imgJoin"></div>
+      
+      <div class="formJoin">
+        <h1>Join To Meeting</h1> 
+        <br><br>
+       <input type="text" id="roomName" placeholder="Room Name">
+       <input type="button" value ="Join" onclick="{window.location.href = '/join/' + document.getElementById('roomName').value}" >
+      </div>
+     
+        </div>
+        <div class="space"></div> <!--SPACE LANG TO-->
+      
+    </div>
+  
+     
+
+<script src="js/joinroom.js"></script> <!--TINGIN KO WALANG JS TO KASI MAGJOJOIN LANG, PATANGGAL NALANG IF HINDI KAILANGN->
+
+</body>
+</html>
