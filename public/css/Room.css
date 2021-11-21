@@ -33,8 +33,8 @@
     --body-bg: linear-gradient(to left, #000000, #000000);
     --msger-top: 50%;
     --msger-left: 50%;
-    --msger-height: 680px;
-    --msger-width: 420px;
+    --msger-height: 600px;
+    --msger-width: 400px;
     --msger-bg: linear-gradient(to left, #1f1e1e, #000000);
     --wb-width: 800px;
     --wb-height: 600px;
@@ -128,12 +128,10 @@ body {
     display: flex;
     flex-wrap: wrap;
 }
-
 #startAudioButton, #stopAudioButton
 {
     margin-left: 45%;
 }
-
 
 #control {
     z-index: 10;
@@ -176,10 +174,6 @@ body {
     opacity: 1;
 }
 
-#control button i {
-    color: #000000;
-}
-
 #control button i:hover {
     color: #376df9;
 }
@@ -192,10 +186,6 @@ body {
 #control p {
     font-size: small;
     cursor: default;
-}
-
-#exitButton {
-    color: red;
 }
 
 #pollBtn, #WordCloudBtn
@@ -702,7 +692,7 @@ button:hover {
     padding: 15px;
     font-size: 1rem;
     background-color: transparent;
-    color: #ffffff;
+    color: #000000;
     border: grey 1px solid;
     border-radius: 10px;
 }
@@ -937,6 +927,7 @@ progress {
         position: absolute;
         bottom: 15%;
     }
+
 }
 
 @media screen and (max-width: 400px) {
@@ -944,9 +935,12 @@ progress {
         top: 15%;
         right: 10%;
     }
-    
     .chat-div {
         right: 23%;
+    }
+    .chat-room {
+        z-index: 1;
+        height: 70%;
     }
 }
 

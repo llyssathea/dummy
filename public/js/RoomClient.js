@@ -1902,7 +1902,6 @@ class RoomClient {
                     position: 'center',
                     title: 'Received file',
                     text: this.incomingFileInfo.fileName + ' size ' + this.bytesToSize(this.incomingFileInfo.fileSize),
-                    imageUrl: e.target.result,
                     imageAlt: 'talked-file-img-download',
                     showDenyButton: true,
                     confirmButtonText: `Save`,

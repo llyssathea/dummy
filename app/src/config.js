@@ -33,7 +33,7 @@ module.exports = {
         2. Get started for free 
         3. Copy YourNgrokAuthToken: https://dashboard.ngrok.com/get-started/your-authtoken
     */
-    ngrokAuthToken: '1s9fvIinxHO1iZvo6kXpKR7wpJ6_4dwkd5YHrbNgZPZA5HBTU',
+    ngrokAuthToken: '',
     apiKeySecret: 'mirotalksfu_default_secret',
     mediasoup: {
         // Worker settings

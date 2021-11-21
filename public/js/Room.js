@@ -95,6 +95,7 @@ function initClient() {
         setTippy('chatCleanButton', 'Clean', 'bottom');
         setTippy('chatSaveButton', 'Save', 'bottom');
         setTippy('sessionTime', 'Session time', 'right');
+
     }
     setupWhiteboard();
     initEnumerateDevices();
@@ -1315,11 +1316,6 @@ function toggleParticipants() {
     participants.classList.toggle('show');
     participants.style.top = '50%';
     participants.style.left = '50%';
-    setTippy('muteAllButton', 'Mute All', 'top');
-    setTippy('hideAllButton', 'Hide All', 'top');
-    setTippy('sendAllButton', 'Send File to All', 'top');
-    setTippy('sendMessageToAll', 'Send Message to All', 'top');
-    setTippy('ejectAllButton', 'Kick Out', 'top');
 }
 
 async function getRoomParticipants(refresh = false) {
@@ -1335,6 +1331,12 @@ async function getRoomParticipants(refresh = false) {
         toggleParticipants();
         sound('open');
     }
+    setTippy('muteAllButton', 'Mute All', 'top');
+    setTippy('hideAllButton', 'Hide All', 'top');
+    setTippy('sendAllButton', 'Send File to All', 'top');
+    setTippy('sendMessageToAll', 'Send Message to All', 'top');
+    setTippy('ejectAllButton', 'Kick Out', 'top');
+    setTippy('muteuser', 'Mute', 'top');
 }
 
 async function getParticipantsTable(peers) {
@@ -1409,6 +1411,7 @@ async function getParticipantsTable(peers) {
     }
     table += `</table>`;
     return table;
+    
 }
 
 function refreshParticipantsCount(count) {
@@ -1431,7 +1434,8 @@ function showAbout() {
         <br/>
         <div id="about">
             <b>TalkED</b><br>
-            <img alt="TalkED" src="../images/TalkedLogo0.png" width="150" height="150"><br/><br/>
+            <img alt="TalkED" src="../images/TalkedLogo0.png" width="140" height="100"><br/><br/>
+            TalkED is a WebRTC based video conferencing tool. <br>
             2021
         </div>
         `,
