@@ -1432,7 +1432,7 @@ class RoomClient {
     sendMessageTo(to_peer_id) {
         if (!this.thereIsParticipants()) {
             chatMessage.value = '';
-            this.userLog('info', 'No participants in the room expect you', 'top-end');
+            this.userLog('info', 'No participants in the room except you', 'top-end');
             return;
         }
         Swal.fire({
