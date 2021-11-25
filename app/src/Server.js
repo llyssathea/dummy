@@ -137,7 +137,7 @@ app.post(['/api/v1/meeting'], (req, res) => {
     let authorization = req.headers.authorization;
     let api = new ServerApi(host, authorization);
     if (!api.isAuthorized()) {
-        log.debug('MiroTalk get meeting - Unauthorized', {
+        log.debug('TalkED get meeting - Unauthorized', {
             header: req.headers,
             body: req.body,
         });
