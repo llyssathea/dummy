@@ -944,6 +944,21 @@ progress {
     }
 }
 
+@media screen and (max-width: 320px) {
+    .flex-row {
+        top: 15%;
+        right: 2%;
+    }
+    .chat-div {
+        top: 12%;
+        right: 17%;
+    }
+    .chat-room {
+        z-index: 1;
+        height: 70%;
+    }
+}
+
 /*
 z-index:
     - 1 videoMediaContainer
