@@ -2180,7 +2180,7 @@ class RoomClient {
                     background: swalBackground,
                     position: 'center',
                     imageUrl: data.broadcast ? image.users : image.user,
-                    title: 'Eject ' + whoEject + ' excpect yourself?',
+                    title: 'Eject ' + whoEject + ' except yourself?',
                     showDenyButton: true,
                     confirmButtonText: `Yes`,
                     denyButtonText: `No`,
@@ -2225,7 +2225,7 @@ class RoomClient {
                     imageUrl: action == 'mute' ? image.mute : image.hide,
                     title:
                         action == 'mute'
-                            ? 'Mute ' + whoMuteHide + ' excpect yourself?'
+                            ? 'Mute ' + whoMuteHide + ' except yourself?'
                             : 'Hide ' + whoMuteHide + ' except yourself?',
                     text:
                         action == 'mute'
